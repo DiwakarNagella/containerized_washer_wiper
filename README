@@ -1,0 +1,11 @@
+Build instructions 
+1. edit the tools.cmake file to the correct location of your installed cross compiler tool chains
+2. cd into WasherWiperApplication/src
+3. generate the make file by running  "cmake -DCMAKE_EXE_LINKER_FLAGS="-static" -DCMAKE_TOOLCHAIN_FILE=/home/ml/wiper_application/WasherWiperApplication/src/tools.cmake"
+4. build the software by running "make"
+5. copy the application file "WasherWiperApplication" and trasfer it to the target using scp, tftp etc
+6. on target, run application as "./WasherWiperApplication"
+
+
+
+
