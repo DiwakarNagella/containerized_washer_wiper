@@ -19,7 +19,7 @@ using namespace Ethernet_Packet;
 using namespace application_protocol;
 
 
-/* IP ADDRESSES AND PORT NUMBER LIST */
+/* ///IP ADDRESSES AND PORT NUMBER LIST */
 #define COMPUTATIONAL_NODE_IP "0.0.0.0"
 
 #define COMPUTATIONAL_NODE_PORT_NUMBER_SEND 16807
@@ -34,7 +34,7 @@ pthread_mutex_t rcv_mut = PTHREAD_MUTEX_INITIALIZER;
 pthread_cond_t rcv_condition = PTHREAD_COND_INITIALIZER;
 
 /* OPERATION CODE LIST */
-#define Set_channel_state 10
+#define Set_channel_state 100
 int acknowledgment,send_channel;
 
 namespace udp_client_server
