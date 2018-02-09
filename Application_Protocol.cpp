@@ -34,7 +34,7 @@ pthread_mutex_t rcv_mut = PTHREAD_MUTEX_INITIALIZER;
 pthread_cond_t rcv_condition = PTHREAD_COND_INITIALIZER;
 
 /* OPERATION CODE LIST */
-#define Set_channel_state 10
+#define Set_channel_state 100
 int acknowledgment,send_channel;
 
 namespace udp_client_server
